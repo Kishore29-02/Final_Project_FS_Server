@@ -1,0 +1,101 @@
+id,first_name,last_name,department,designation_type,hire_date,employment_status
+1,Susan,Snow,Furniture designer,C,2017-07-28,active
+2,Lisa,Moses,Hospital doctor,D,2022-04-06,active
+3,Autumn,Bridges,Education administrator,A,2019-04-04,rejected
+4,Kristin,Lowery,Patent examiner,A,2023-04-27,rejected
+5,Mark,Cruz,Theatre director,C,2022-11-12,rejected
+6,Linda,Reyes,Public relations officer,D,2018-03-02,rejected
+7,Justin,Butler,Warden/ranger,A,2020-12-16,rejected
+8,Richard,Porter,"Teacher, early years/pre",C,2021-03-29,rejected
+9,Jessica,Buck,Textile designer,B,2021-07-10,rejected
+10,Arthur,Fitzpatrick,IT trainer,C,2023-10-17,rejected
+11,Sandra,Jones,"Surveyor, building",B,2015-01-07,active
+12,Stephanie,Adams,Radio producer,B,2022-05-25,rejected
+13,Colleen,Mcneil,"Engineer, materials",D,2019-11-23,active
+14,Steven,Hart,Recycling officer,C,2020-05-09,active
+15,Rachel,Carrillo,Soil scientist,C,2015-01-13,rejected
+16,Sara,Patterson,"Engineer, energy",A,2015-09-12,rejected
+17,Matthew,Murray,Orthoptist,B,2022-07-12,rejected
+18,Hector,Scott,Television/film/video producer,A,2019-08-10,active
+19,Adam,Jacobs,Probation officer,D,2023-02-17,active
+20,Kathleen,Myers,Lawyer,D,2023-08-17,rejected
+21,Trevor,Hess,Occupational hygienist,D,2020-05-05,rejected
+22,William,Williams,Minerals surveyor,B,2018-11-26,rejected
+23,Brian,Taylor,Publishing copy,C,2024-09-06,rejected
+24,Grace,Robbins,"Buyer, retail",C,2022-08-31,active
+25,Martin,Martin,Water quality scientist,A,2016-04-30,rejected
+26,Gene,Humphrey,"Radiographer, diagnostic",A,2018-02-06,active
+27,Francisco,Lin,Armed forces logistics/support/administrative officer,D,2024-01-04,rejected
+28,Janice,Wood,Medical technical officer,B,2018-05-04,active
+29,Arthur,Steele,"Therapist, nutritional",C,2015-01-06,active
+30,Kari,Edwards,Office manager,B,2016-02-02,active
+31,Latoya,Rodriguez,Mechanical engineer,C,2015-06-24,rejected
+32,Jenna,Garcia,Phytotherapist,B,2019-05-09,active
+33,Yolanda,Dixon,"Designer, industrial/product",A,2020-04-04,active
+34,Tiffany,Wall,"Production assistant, television",B,2023-11-29,active
+35,Madison,Hooper,"Engineer, communications",B,2015-07-16,rejected
+36,Natasha,Fleming,Chiropractor,D,2015-03-04,rejected
+37,Kevin,Fisher,Arboriculturist,B,2022-01-17,active
+38,Micheal,Chapman,"Buyer, industrial",B,2021-09-25,rejected
+39,Charles,Hanson,Camera operator,D,2018-11-06,rejected
+40,Brittany,Smith,Microbiologist,B,2019-10-22,rejected
+41,Sarah,Guerrero,Research scientist (medical),C,2023-06-19,active
+42,Tyler,Williams,Camera operator,D,2023-05-27,active
+43,Kaitlyn,Ingram,Civil Service fast streamer,B,2023-02-09,active
+44,Rebecca,Kirk,Social worker,B,2023-08-09,rejected
+45,Jason,Fitzgerald,Catering manager,A,2022-03-07,rejected
+46,Ronald,Adams,Call centre manager,A,2024-07-27,active
+47,Melinda,Sanchez,Marine scientist,B,2018-05-10,active
+48,Lucas,Morgan,Engineering geologist,B,2017-02-11,active
+49,Debbie,Bryant,Museum/gallery conservator,D,2015-08-23,active
+50,Cynthia,Kelly,General practice doctor,B,2015-08-12,active
+51,Latasha,Pena,"Psychologist, sport and exercise",D,2024-01-06,rejected
+52,Katrina,Franco,Health visitor,D,2019-04-27,rejected
+53,Jared,Velasquez,Sports coach,D,2022-11-16,rejected
+54,Shannon,Ruiz,Sports administrator,C,2022-01-06,active
+55,Elizabeth,Morgan,Fast food restaurant manager,C,2019-11-21,active
+56,William,Davis,Water engineer,A,2023-12-19,active
+57,Alexa,Stewart,"Surveyor, commercial/residential",B,2016-10-10,active
+58,Chad,Sloan,Astronomer,B,2016-06-23,rejected
+59,Debbie,Woodward,Careers information officer,D,2016-02-11,active
+60,Phillip,Yang,Public house manager,A,2015-01-20,active
+61,Tyler,Zuniga,"Engineer, site",D,2020-01-29,rejected
+62,Joseph,Skinner,Film/video editor,C,2023-06-29,active
+63,Richard,Shannon,Land/geomatics surveyor,C,2022-07-03,rejected
+64,Matthew,Erickson,Land/geomatics surveyor,B,2020-12-02,rejected
+65,Amanda,Ford,Animal nutritionist,A,2023-01-31,active
+66,Charles,Boyd,"Lecturer, higher education",D,2015-04-07,rejected
+67,Lisa,Boyd,Clothing/textile technologist,B,2018-01-05,active
+68,Amy,Benson,Television camera operator,B,2021-05-30,active
+69,Brandon,Grant,"Engineer, building services",D,2022-01-02,rejected
+70,Mason,Thomas,Proofreader,C,2017-08-06,active
+71,Dale,Foster,Chemical engineer,B,2023-08-21,rejected
+72,Michael,Day,Land/geomatics surveyor,A,2020-12-31,active
+73,Christopher,Austin,Communications engineer,A,2021-09-14,active
+74,John,Welch,"Engineer, mining",C,2021-11-24,rejected
+75,Thomas,Christensen,"Journalist, magazine",A,2018-07-05,rejected
+76,Courtney,Le,Counselling psychologist,D,2018-12-12,active
+77,Brian,Lee,Community arts worker,C,2019-07-29,rejected
+78,Jimmy,Mora,Tourist information centre manager,B,2020-03-10,rejected
+79,Carly,Warren,Transport planner,D,2018-09-05,active
+80,Amanda,Howell,Dealer,B,2024-05-29,active
+81,Dana,Miller,Animal technologist,C,2022-12-07,rejected
+82,Margaret,Nelson,Freight forwarder,D,2017-12-20,rejected
+83,Diana,Jacobs,Recycling officer,A,2017-04-29,active
+84,Marissa,Shelton,"Accountant, chartered certified",C,2024-07-20,active
+85,Melissa,Baxter,Immigration officer,C,2023-06-23,active
+86,Jennifer,Robinson,Product manager,C,2020-09-04,rejected
+87,Anthony,West,Dietitian,C,2023-06-30,active
+88,Jorge,Thomas,"Presenter, broadcasting",A,2015-08-04,rejected
+89,Yvette,King,Sport and exercise psychologist,D,2022-03-17,rejected
+90,Jeremy,Knight,"Scientist, product/process development",D,2015-07-31,active
+91,Jennifer,Crane,"Psychotherapist, child",A,2023-04-27,active
+92,Dawn,Cross,Patent attorney,A,2019-12-08,rejected
+93,Stacie,Jimenez,Dentist,D,2018-06-13,active
+94,Madison,Hamilton,Human resources officer,A,2019-03-30,rejected
+95,Tracey,Price,Research scientist (medical),C,2023-06-17,rejected
+96,Steven,Perry,Database administrator,D,2019-02-03,rejected
+97,Fred,Powell,Transport planner,A,2020-05-02,active
+98,Teresa,Perry,Amenity horticulturist,C,2020-12-26,active
+99,Christopher,Roman,Community development worker,B,2015-08-25,rejected
+100,Miranda,Pace,Soil scientist,A,2018-03-10,rejected

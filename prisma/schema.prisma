@@ -1,0 +1,101 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Employees {
+  id               Int                @id @default(autoincrement())
+  first_name       String
+  last_name        String
+  department       String
+  designation_type DesignationType
+  hire_date        DateTime
+  employment_status EmploymentStatus
+  
+  user_account        User_Accounts?
+  course_performances Course_Performances[]
+  project_performances Project_Performances[]
+  resignation_records  Resignation_Records[]
+}
+
+model User_Accounts {
+  employee_id Int    @unique
+  email       String
+  password    String
+  role        Role    @default(USER)
+  employee    Employees @relation(fields: [employee_id], references: [id])
+}
+
+model Courses {
+  id               Int                @id @default(autoincrement())
+  course_name      String
+  course_description String
+  duration_hours   Int
+  designation_courses Designation_Courses[]
+  course_performances Course_Performances[]
+}
+
+model Designation_Courses {
+  designation_type DesignationType
+  course_id        Int
+  course           Courses          @relation(fields: [course_id], references: [id])
+  
+  @@id([designation_type, course_id])
+}
+
+model Course_Performances {
+  id             Int        @id @default(autoincrement())
+  employee_id    Int
+  course_id      Int
+  course_status  CourseStatus
+  score          Int
+  completion_date DateTime
+  employee       Employees   @relation(fields: [employee_id], references: [id])
+  course         Courses     @relation(fields: [course_id], references: [id])
+}
+
+model Project_Performances {
+  id                       Int     @id @default(autoincrement())
+  employee_id              Int
+  project_id               Int
+  engagement_score         Int
+  teamwork_score           Int
+  punctuality_score        Int
+  overall_performance_score Int
+  employee                 Employees @relation(fields: [employee_id], references: [id])
+}
+
+model Resignation_Records {
+  id               Int       @id @default(autoincrement())
+  employee_id      Int
+  resignation_date DateTime
+  reason           String
+  employee         Employees @relation(fields: [employee_id], references: [id])
+}
+
+enum EmploymentStatus {
+  active
+  rejected
+}
+
+enum DesignationType {
+  A
+  B
+  C
+  D
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum CourseStatus {
+  completed
+  failed
+  incomplete
+}
