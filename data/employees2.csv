@@ -1,0 +1,101 @@
+id,first_name,last_name,department,designation_type,hire_date,employment_status
+1,Susan,Snow,Marketing,C,28-07-2017,active
+2,Lisa,Moses,DevOps,D,06-04-2022,active
+3,Autumn,Bridges,Quality Assurance,A,04-04-2019,rejected
+4,Kristin,Lowery,Human Resources,A,27-04-2023,rejected
+5,Mark,Cruz,Sales,C,12-11-2022,rejected
+6,Linda,Reyes,Product Management,D,02-03-2018,rejected
+7,Justin,Butler,Sales,A,16-12-2020,rejected
+8,Richard,Porter,Sales,C,29-03-2021,rejected
+9,Jessica,Buck,Customer Support,B,10-07-2021,rejected
+10,Arthur,Fitzpatrick,Customer Support,C,17-10-2023,rejected
+11,Sandra,Jones,Human Resources,B,07-01-2015,active
+12,Stephanie,Adams,Product Management,B,25-05-2022,rejected
+13,Colleen,Mcneil,Quality Assurance,D,23-11-2019,active
+14,Steven,Hart,Sales,C,09-05-2020,active
+15,Rachel,Carrillo,Customer Support,C,13-01-2015,rejected
+16,Sara,Patterson,DevOps,A,12-09-2015,rejected
+17,Matthew,Murray,Customer Support,B,12-07-2022,rejected
+18,Hector,Scott,Sales,A,10-08-2019,active
+19,Adam,Jacobs,Human Resources,D,17-02-2023,active
+20,Kathleen,Myers,Software Development,D,17-08-2023,rejected
+21,Trevor,Hess,Human Resources,D,05-05-2020,rejected
+22,William,Williams,Customer Support,B,26-11-2018,rejected
+23,Brian,Taylor,Product Management,C,06-09-2024,rejected
+24,Grace,Robbins,Quality Assurance,C,31-08-2022,active
+25,Martin,Martin,Human Resources,A,30-04-2016,rejected
+26,Gene,Humphrey,Software Development,A,06-02-2018,active
+27,Francisco,Lin,Human Resources,D,04-01-2024,rejected
+28,Janice,Wood,Customer Support,B,04-05-2018,active
+29,Arthur,Steele,DevOps,C,06-01-2015,active
+30,Kari,Edwards,Marketing,B,02-02-2016,active
+31,Latoya,Rodriguez,Software Development,C,24-06-2015,rejected
+32,Jenna,Garcia,Product Management,B,09-05-2019,active
+33,Yolanda,Dixon,IT Support,A,04-04-2020,active
+34,Tiffany,Wall,Quality Assurance,B,29-11-2023,active
+35,Madison,Hooper,Quality Assurance,B,16-07-2015,rejected
+36,Natasha,Fleming,Product Management,D,04-03-2015,rejected
+37,Kevin,Fisher,Software Development,B,17-01-2022,active
+38,Micheal,Chapman,Software Development,B,25-09-2021,rejected
+39,Charles,Hanson,DevOps,D,06-11-2018,rejected
+40,Brittany,Smith,DevOps,B,22-10-2019,rejected
+41,Sarah,Guerrero,Software Development,C,19-06-2023,active
+42,Tyler,Williams,Sales,D,27-05-2023,active
+43,Kaitlyn,Ingram,IT Support,B,09-02-2023,active
+44,Rebecca,Kirk,Software Development,B,09-08-2023,rejected
+45,Jason,Fitzgerald,DevOps,A,07-03-2022,rejected
+46,Ronald,Adams,Software Development,A,27-07-2024,active
+47,Melinda,Sanchez,Software Development,B,10-05-2018,active
+48,Lucas,Morgan,Human Resources,B,11-02-2017,active
+49,Debbie,Bryant,Marketing,D,23-08-2015,active
+50,Cynthia,Kelly,Product Management,B,12-08-2015,active
+51,Latasha,Pena,Product Management,D,06-01-2024,rejected
+52,Katrina,Franco,Quality Assurance,D,27-04-2019,rejected
+53,Jared,Velasquez,Sales,D,16-11-2022,rejected
+54,Shannon,Ruiz,Software Development,C,06-01-2022,active
+55,Elizabeth,Morgan,Quality Assurance,C,21-11-2019,active
+56,William,Davis,DevOps,A,19-12-2023,active
+57,Alexa,Stewart,Human Resources,B,10-10-2016,active
+58,Chad,Sloan,Product Management,B,23-06-2016,rejected
+59,Debbie,Woodward,Software Development,D,11-02-2016,active
+60,Phillip,Yang,IT Support,A,20-01-2015,active
+61,Tyler,Zuniga,Human Resources,D,29-01-2020,rejected
+62,Joseph,Skinner,DevOps,C,29-06-2023,active
+63,Richard,Shannon,Customer Support,C,03-07-2022,rejected
+64,Matthew,Erickson,Customer Support,B,02-12-2020,rejected
+65,Amanda,Ford,Software Development,A,31-01-2023,active
+66,Charles,Boyd,Customer Support,D,07-04-2015,rejected
+67,Lisa,Boyd,Human Resources,B,05-01-2018,active
+68,Amy,Benson,IT Support,B,30-05-2021,active
+69,Brandon,Grant,Customer Support,D,02-01-2022,rejected
+70,Mason,Thomas,Quality Assurance,C,06-08-2017,active
+71,Dale,Foster,Marketing,B,21-08-2023,rejected
+72,Michael,Day,Software Development,A,31-12-2020,active
+73,Christopher,Austin,Sales,A,14-09-2021,active
+74,John,Welch,Software Development,C,24-11-2021,rejected
+75,Thomas,Christensen,Sales,A,05-07-2018,rejected
+76,Courtney,Le,Customer Support,D,12-12-2018,active
+77,Brian,Lee,Customer Support,C,29-07-2019,rejected
+78,Jimmy,Mora,IT Support,B,10-03-2020,rejected
+79,Carly,Warren,Product Management,D,05-09-2018,active
+80,Amanda,Howell,Marketing,B,29-05-2024,active
+81,Dana,Miller,Software Development,C,07-12-2022,rejected
+82,Margaret,Nelson,Human Resources,D,20-12-2017,rejected
+83,Diana,Jacobs,IT Support,A,29-04-2017,active
+84,Marissa,Shelton,Product Management,C,20-07-2024,active
+85,Melissa,Baxter,Customer Support,C,23-06-2023,active
+86,Jennifer,Robinson,IT Support,C,04-09-2020,rejected
+87,Anthony,West,Human Resources,C,30-06-2023,active
+88,Jorge,Thomas,Marketing,A,04-08-2015,rejected
+89,Yvette,King,Human Resources,D,17-03-2022,rejected
+90,Jeremy,Knight,IT Support,D,31-07-2015,active
+91,Jennifer,Crane,DevOps,A,27-04-2023,active
+92,Dawn,Cross,Sales,A,08-12-2019,rejected
+93,Stacie,Jimenez,Quality Assurance,D,13-06-2018,active
+94,Madison,Hamilton,DevOps,A,30-03-2019,rejected
+95,Tracey,Price,Product Management,C,17-06-2023,rejected
+96,Steven,Perry,Human Resources,D,03-02-2019,rejected
+97,Fred,Powell,Quality Assurance,A,02-05-2020,active
+98,Teresa,Perry,IT Support,C,26-12-2020,active
+99,Christopher,Roman,Customer Support,B,25-08-2015,rejected
+100,Miranda,Pace,Quality Assurance,A,10-03-2018,rejected

@@ -31,8 +31,6 @@ router.post("/", async function(req, res, next) {
             ... userInfo
         }
 
-        // console.log(userDetails);
-
         const token = jwt.sign({ email: userInfo.email, id: userInfo.emp_id }, process.env.SECRET_KEY, { expiresIn: '24h' });
         
         res.setHeader('Authorization', `Bearer ${token}`);
