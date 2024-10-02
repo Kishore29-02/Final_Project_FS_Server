@@ -11,6 +11,7 @@ async function truncateTables() {
   await prisma.course_Performances.deleteMany({});
   await prisma.designation_Courses.deleteMany({});
   await prisma.resignation_Records.deleteMany({});
+  await prisma.project_Performances.deleteMany({});
   await prisma.user_Accounts.deleteMany({});
   await prisma.employees.deleteMany({});
   await prisma.courses.deleteMany({});
@@ -120,6 +121,23 @@ async function seedResignations() {
         });
     }
 }
+
+//Seed Proejct Performances
+async function seedProjectPerformances() {
+    const projectPerformances = await readCSV('./data/project_performance.csv');
+    for (const projectPerformance of projectPerformances) {
+        await prisma.project_Performances.create({
+            data: {
+                employee_id: parseInt(projectPerformance.employee_id),
+                project_id: parseInt(projectPerformance.project_id),
+                engagement_score: parseInt(projectPerformance.engagement_score),
+                teamwork_score: parseInt(projectPerformance.teamwork_score),
+                punctuality_score: parseInt(projectPerformance.punctuality_score),
+                overall_performance_score: parseInt(projectPerformance.overall_performance_score),
+            },
+        });
+    }
+}
  
 // Main function to run all seeds
 async function main() {
@@ -131,6 +149,7 @@ async function main() {
     await seedCoursePerformances();
     await seedDesignationCourses();
     await seedResignations();
+    await seedProjectPerformances();
 }
  
 main()
