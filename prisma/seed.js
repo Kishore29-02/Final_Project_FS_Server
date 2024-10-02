@@ -2,7 +2,8 @@ const { PrismaClient } = require('@prisma/client');
 const fs = require('fs');
 const csv = require('csv-parser');
 const bcrypt = require('bcrypt');
- 
+// const temp = require('empl')
+// const employees = require('./data/employees.csv');
 const prisma = new PrismaClient();
  
 // Function to read CSV data
@@ -29,7 +30,7 @@ async function readCSV(filePath) {
 
 // Seed employees
 async function seedEmployees() {
-    const employees = await readCSV('../server/data/employees.csv');
+    const employees = await readCSV('./data/employees.csv');
     for (const employee of employees) {
         await prisma.employees.create({
             data: {
@@ -47,7 +48,7 @@ async function seedEmployees() {
  
 // Seed user accounts
 async function seedUserAccounts() {
-    const userAccounts = await readCSV('../server/data/user_accounts.csv');
+    const userAccounts = await readCSV('./data/user_accounts.csv');
     for (const account of userAccounts) {
         const hashedPassword = await bcrypt.hash(account.password, 10);
         await prisma.user_Accounts.create({
@@ -63,7 +64,7 @@ async function seedUserAccounts() {
  
 // Seed courses
 async function seedCourses() {
-    const courses = await readCSV('../server/data/courses.csv');
+    const courses = await readCSV('./data/courses.csv');
     for (const course of courses) {
         await prisma.courses.create({
             data: {
@@ -75,10 +76,11 @@ async function seedCourses() {
         });
     }
 }
- 
+
+
 // Seed course performances
 async function seedCoursePerformances() {
-    const performances = await readCSV('../server/data/course_performance.csv');
+    const performances = await readCSV('./data/course_performance.csv');
     for (const performance of performances) {
         await prisma.course_Performances.create({
             data: {
@@ -94,7 +96,7 @@ async function seedCoursePerformances() {
  
 // Seed designation courses
 async function seedDesignationCourses() {
-    const designationCourses = await readCSV('../server/data/designation_courses.csv');
+    const designationCourses = await readCSV('./data/designation_courses.csv');
     for (const designationCourse of designationCourses) {
         await prisma.designation_Courses.create({
             data: {
@@ -107,7 +109,7 @@ async function seedDesignationCourses() {
  
 // Seed resignation records
 async function seedResignations() {
-    const resignations = await readCSV('../server/data/resignations.csv');
+    const resignations = await readCSV('./data/resignations.csv');
     for (const resignation of resignations) {
         await prisma.resignation_Records.create({
             data: {
