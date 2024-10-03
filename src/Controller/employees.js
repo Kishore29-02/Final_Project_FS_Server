@@ -1,5 +1,4 @@
 const {PrismaClient, EmploymentStatus} = require('@prisma/client');
-const e = require('express');
 const prisma = new PrismaClient();
 
 const getEmployeesByEmail = async (email) => {
