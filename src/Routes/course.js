@@ -2,16 +2,23 @@ const express = require('express');
 const {
     getAllCourseDetails,
     getCourseStatusCountByCourseId,
-} = require('../Controller/course');
+    getTopPerformingEmployeesByCourseAndStatus,
+    getDesignationCourses,
+    getTopPerformingEmployeesWithAvgScores,
+} = require('../Controller');
 
 const router = express.Router();
 
 router.get('/performance', async (req, res) => {
     try {
-        const id = parseInt(req.query.course_id) ;
-        // const coursePerformance = await getCoursePerformanceByIds(id);
-        const courseStatusCount = await getCourseStatusCountByCourseId(id);
-        res.json({ courseStatusCount});
+        const courseId = parseInt(req.query.course_id) ;
+
+        const courseStatusCount = await getCourseStatusCountByCourseId(courseId);
+        const overAllCoursePerformance = await getTopPerformingEmployeesByCourseAndStatus({count: 10, courseId: courseId, courseStatus: 'completed'});
+        const getDesignations = await getDesignationCourses(courseId);
+        const departmentPerformance = await getTopPerformingEmployeesWithAvgScores(courseId);
+        
+        res.json({ overAllCoursePerformance, departmentPerformance, designationDetails: getDesignations[0], courseStatusCount});
     } catch (error) {
         console.log(error);
         res.status(500).json({ message: 'Internal server error' });

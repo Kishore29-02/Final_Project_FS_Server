@@ -28,8 +28,7 @@ router.post('/', async (req, res) => {
             OR: [
                 { email: email },
                 { employee_id: emp_id }
-              ]
-             
+              ]             
         },
       });
   
@@ -37,10 +36,8 @@ router.post('/', async (req, res) => {
         return res.status(400).json({ error: 'User account already exists' });
       }
   
-      // Encrypt the password
       const hashedPassword = await bcrypt.hash(password, 10);
   
-      // Create the user account
       await prisma.user_Accounts.create({
         data: {
           employee_id: emp_id,

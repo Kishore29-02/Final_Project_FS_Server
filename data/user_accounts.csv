@@ -1,6 +1,6 @@
 employee_id,email,password,role
 1,admin@gmail.com,123,ADMIN
-2,larsonderek@yahoo.com,+#9T1bVw4x,USER
+2,user@gmail.com,111,USER
 3,eric39@hotmail.com,F44mMnIkU%,USER
 4,john51@chavez.net,P1VwmPDg(I,USER
 5,xporter@hotmail.com,C+2G&X5c7P,USER

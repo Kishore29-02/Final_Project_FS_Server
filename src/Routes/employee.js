@@ -1,9 +1,11 @@
 const express = require('express');
 const {
     getEmployeesByEmail,
-    getCoursePerformanceByIds,
+    getCoursePerformanceByEmployeeIds,
     getDetailEmployeeCourseReport,
-} = require('../Controller/employees');
+    getJobPerformanceByEmployeeIds,
+    getAllEmployeeProjectCount,
+} = require('../Controller');
 
 const router = express.Router();
 
@@ -34,7 +36,10 @@ router.get('/performance', async (req, res) => {
         
         const averageScore = completedCourseScores.reduce((acc, cp) => acc + cp.score, 0) / completedCourseScores.length;
 
+        const jobPerformance = await getJobPerformanceByEmployeeIds([id]);
+
         res.json({
+            jobPerformance,
             coursesAssigned,
             completedCourseScores,
             topScoreAndCourse,
@@ -52,7 +57,8 @@ router.get('/', async (req, res) => {
         const email = req.query.email || "";
 
         const employeeDetails = await getEmployeesByEmail(email);
-        const coursePerformance = await getCoursePerformanceByIds(employeeDetails.map((employee) => employee.employee.id));
+        const coursePerformance = await getCoursePerformanceByEmployeeIds(employeeDetails.map((employee) => employee.employee.id));
+        const projectCount = await getAllEmployeeProjectCount();
 
         const getCourseStatusCount = (coursePerformance, employeeId, courseStatus) => {
             const filteredResult = coursePerformance.filter((cp) => cp.employee_id === employeeId && cp.course_status === courseStatus);
@@ -66,6 +72,7 @@ router.get('/', async (req, res) => {
             dept: employee.employee.department,
             designation: employee.employee.designation_type,
             email: employee.email,
+            projectCount: projectCount.find((pc) => pc.employee_id === employee.employee.id)._count.project_id,
             courseCompletedCount: getCourseStatusCount(coursePerformance, employee.employee.id, 'completed'),
             courseFailedCount: getCourseStatusCount(coursePerformance, employee.employee.id, 'failed'),
             courseIncompleteCount: getCourseStatusCount(coursePerformance, employee.employee.id, 'incomplete'),
