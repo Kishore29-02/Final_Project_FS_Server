@@ -23,7 +23,7 @@ router.post("/", async function(req, res, next) {
         }
 
         const userDetails = {
-            ... await getUserDetails(userInfo.emp_id),
+            ... await getUserDetails(userInfo.employee_id),
             ... userInfo
         }
 
@@ -38,7 +38,13 @@ router.post("/", async function(req, res, next) {
           );
         
         res.setHeader('Authorization', `Bearer ${token}`);
-        res.json({ message: "Authentication successful", token, name: `${userDetails.first_name} ${userDetails.last_name}` });
+        res.json({ 
+            message: "Authentication successful", 
+            token, 
+            id: userInfo.employee_id,
+            name: `${userDetails.first_name} ${userDetails.last_name}`,
+            role: userDetails.role,
+        });
 
     } catch (error) {
         console.log(error);

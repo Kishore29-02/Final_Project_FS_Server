@@ -25,7 +25,15 @@ const authenticateToken = (req, res, next) => {
     next();
   };
 
+const isValidUser = (req, res, next) => {
+    if (req.user.id !== req.id) {
+        return res.status(403).json({ message: "Invalid User" });
+    }
+    next();
+};
+
 module.exports = {
     authenticateToken,
     isAdmin,
+    isValidUser,
 };

@@ -85,4 +85,15 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.get('/job-performance', async (req, res) => {
+    try {
+        const id = parseInt(req.query.id);
+        const jobPerformance = await getJobPerformanceByEmployeeIds([id]);
+        res.json(jobPerformance);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
 module.exports = router;
